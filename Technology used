@@ -1,0 +1,58 @@
+#FINANCIAL WELL BEING
+#Perfect Ok
+#PYTHON
+#3.8.5 SHELL
+# SOLUTION :
+Name = input("Enter your name : ")
+print("Voo That was nice ")
+Age = int(input("Enter your age : "))
+job = input("What is your job : ")
+no_family_members = int(input("Enter the number of family members : "))
+monthly_salary = int(input("Enter your monthly salary : "))
+rent = input("Are you staying in a rented house(Y/N) ? :")
+print("------------------------------")
+print("Now tell us about your expenses in a month : ")
+print("------------------------------")
+electricity = int(input("What is your average Electricity Bill? :"))
+water = int(input("How much do you pay for Water : "))
+entertainment = int(input("Usually how much do you pay for entertainments : "))
+if rent == "Y":
+    rent_exp = int(input("How much is your rent : "))
+else:
+    rent_exp=0
+fuel = int(input("Enter the amount you spend for fuel : "))
+food = int(input("For food ? : "))
+smartphone = input("Do you have smartphone or not(Y/N) : ")
+if smartphone == "Y":
+    recharge = int(input("What is the amount of basic plan you take for recharging your smartphone : ? "))
+else:
+    recharge=0
+other = input("Do you have any other expenses(Y/N) : ")
+if other == "Y":
+    other_amount = int(input("Enter the amount : "))
+else:
+    other_amount = 0
+Total_Expenses = electricity + water + entertainment + rent_exp + fuel + food + recharge + other_amount
+print("Your total expense is Rs." ,Total_Expenses)
+print("Now i will tell you if you are satisfied with your expenses or not : ")
+if Total_Expenses>monthly_salary:
+    print("You are not at all satisfied with your Total expenses")
+    right = input("Am I right?(Y/N) : ")
+    if right == "Y":
+        print("Dont worry i can guide you")
+        print("Here we are with the steps : ")
+        print("1.You should Take control of your expenses with the presence of mind")
+        print("2.YOu should Organize Your Accounts")
+        print("3.You should defenitely target on the budgest")
+        print("4.Be patient enough and manage your debts")
+        print("5.Always try to save for the future")
+        print("And dont forget to contact with a financial counsillor")
+        print("Okay Thats all!! Good luck for your future")
+elif Total_Expenses == monthly_salary:
+    print("You are in the border of satisfaction")
+    print("You should defenitely contact a financial counsillor")
+else:
+    print("Okay you can leave,you are perfect in Financial well being since your expenses are less than your monthly income : ")
+print("Thank You")
+
+    
